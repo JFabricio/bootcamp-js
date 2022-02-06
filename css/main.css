@@ -1,0 +1,61 @@
+* {
+    /*RESET CSS. A page zera todas os espaços vazio(definir 1ª)*/
+    margin: 0;
+    padding: 0;
+    /*define que todos elementos dentro da caixa respeitem o tamanho da caixa*/
+    box-sizing: border-box;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width:870px) {
+    main .container {
+        flex-direction: column;
+        display: flex;
+        /*Alinhamento Vertical*/
+        align-items: center;
+        /**Alinhamento horizontal com espaço entre os elementos*/
+        justify-content: space-between;
+    }
+    .bo {
+        margin-top: 5px;
+        width: 10px;
+        height: 60px;
+    }
+}
+
+html {
+    background-color: black;
+    color: aliceblue;
+}
+
+.bo {
+    margin-top: 5%;
+    margin-left: 13%;
+    margin-right: 20%;
+    padding: 15px 500px;
+    border: solid aqua;
+    border-radius: 70%;
+    background-color: aqua;
+}
+
+button h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: -400px;
+    margin-right: -400px;
+}
+
+.msg {
+    margin-top: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+}
