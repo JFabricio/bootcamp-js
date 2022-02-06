@@ -1,3 +1,9 @@
+:root {
+    /*Uso de variaveis(na raiz)*/
+    --branco: white;
+    --preta: #101414;
+}
+
 * {
     /*RESET CSS. A page zera todas os espaços vazio(definir 1ª)*/
     margin: 0;
@@ -26,7 +32,7 @@
 }
 
 html {
-    background-color: black;
+    background-color: var(--preta);
     color: aliceblue;
 }
 
@@ -52,10 +58,17 @@ button h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: azure
+    color: var(--branco);
 }
 
 main .container {
     display: flex;
     flex-direction: column;
+}
+
+.container .nav {
+    background-color: var(--branco);
+    background-image: url('/img/img2.png');
+    background-repeat: no-repeat;
+    padding-left: 65%;
 }
